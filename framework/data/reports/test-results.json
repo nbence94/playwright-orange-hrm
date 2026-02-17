@@ -1,0 +1,213 @@
+{
+  "config": {
+    "configFile": "F:\\Developing\\_Projects\\testing\\Playwright\\js_playwright\\orangeHRM\\playwright.config.js",
+    "rootDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "regression",
+        "name": "regression",
+        "testDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smoke",
+        "name": "smoke",
+        "testDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "./framework/data/reports"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./framework/data/reports/junit-report.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./framework/data/reports/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.js",
+      "file": "example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Tests",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "invalid-login @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regression",
+                  "projectName": "regression",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7330,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "2026-02-17T20:14:08+01:00 [info]: ----------------------------------------\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:08+01:00 [info]: Test started: invalid-login @regression\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:08+01:00 [info]: Test retry: 1\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:08+01:00 [info]: Test project: regression\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:08+01:00 [info]: ----------------------------------------\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Password has been set. (value: invalid)\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:11+01:00 [info]: ✅ Login page is visible\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:13+01:00 [info]: ✅ Error message is visible\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Username has been set. (value: invalid)\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:13+01:00 [info]: ✅ Login page is visible\r\n"
+                        },
+                        {
+                          "text": "2026-02-17T20:14:15+01:00 [info]: ✅ Error message is visible\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Attempt to login (invalid password)",
+                          "duration": 939
+                        },
+                        {
+                          "title": "Check if Error Message",
+                          "duration": 2029
+                        },
+                        {
+                          "title": "Attempt to login (invalid username)",
+                          "duration": 85
+                        },
+                        {
+                          "title": "Check if Error Message",
+                          "duration": 1810
+                        }
+                      ],
+                      "startTime": "2026-02-17T19:14:08.041Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dd9b2edffe9b7501040c-31bb75755cdd17ab56f7",
+              "file": "example.spec.js",
+              "line": 40,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-17T19:14:07.073Z",
+    "duration": 8473.52,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

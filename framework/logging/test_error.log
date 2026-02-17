@@ -1,0 +1,19 @@
+2026-02-10T19:35:49+01:00 [error]: Click failed
+2026-02-10T19:36:46+01:00 [error]: Click failed
+2026-02-10T19:42:16+01:00 [error]: Click failed
+2026-02-10T19:43:08+01:00 [error]: Failed to click login button
+2026-02-10T20:03:56+01:00 [error]: Failed to click login button
+2026-02-10T20:04:33+01:00 [error]: Failed to click login button
+2026-02-10T20:06:07+01:00 [error]: Failed to click login button
+2026-02-10T20:07:21+01:00 [error]: Failed to click login button
+2026-02-11T20:42:32+01:00 [error]: Soft validation failed: Username field is not visible
+2026-02-11T20:42:42+01:00 [error]: Hard validation failed: Login button is not visible
+2026-02-11T20:53:13+01:00 [error]: Soft validation failed: Username field is not visible
+2026-02-11T20:53:23+01:00 [error]: Hard validation failed: Login button is not visible
+2026-02-11T20:59:16+01:00 [error]: ⚠️ Soft error detected: Username field is not visible
+2026-02-11T20:59:26+01:00 [error]: ❌ Fatal error detected: Login button is not visible
+2026-02-11T21:00:12+01:00 [error]: ⚠️ Soft error detected: Username field is not visible
+2026-02-11T21:00:22+01:00 [error]: ❌ Fatal error detected: Login button is not visible
+2026-02-17T19:12:46+01:00 [error]: ❌ Username is not visible
+2026-02-17T19:17:59+01:00 [error]: ❌ Fatal error detected: ❌ Title is not visible
+2026-02-17T19:18:02+01:00 [error]: ❌ Username is not visible
