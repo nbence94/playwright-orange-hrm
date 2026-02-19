@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "F:\\Developing\\_Projects\\testing\\Playwright\\js_playwright\\orangeHRM\\playwright.config.js",
-    "rootDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+    "configFile": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\playwright.config.js",
+    "rootDir": "F:/Developing/_Projects/git/playwright-orange-hrm/framework/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -16,7 +16,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/test-results",
+        "outputDir": "F:/Developing/_Projects/git/playwright-orange-hrm/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -24,7 +24,7 @@
         },
         "id": "regression",
         "name": "regression",
-        "testDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+        "testDir": "F:/Developing/_Projects/git/playwright-orange-hrm/framework/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -32,7 +32,7 @@
         "timeout": 30000
       },
       {
-        "outputDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/test-results",
+        "outputDir": "F:/Developing/_Projects/git/playwright-orange-hrm/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -40,7 +40,7 @@
         },
         "id": "smoke",
         "name": "smoke",
-        "testDir": "F:/Developing/_Projects/testing/Playwright/js_playwright/orangeHRM/framework/tests",
+        "testDir": "F:/Developing/_Projects/git/playwright-orange-hrm/framework/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -84,20 +84,20 @@
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
+      "title": "navigation.spec.js",
+      "file": "navigation.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Tests",
-          "file": "example.spec.js",
+          "title": "Navigation Tests",
+          "file": "navigation.spec.js",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "invalid-login @regression",
+              "title": "navigate-in-app @regression",
               "ok": true,
               "tags": [
                 "regression"
@@ -114,76 +114,77 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7330,
+                      "duration": 11883,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "2026-02-17T20:14:08+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-19T18:49:15+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:08+01:00 [info]: Test started: invalid-login @regression\r\n"
+                          "text": "2026-02-19T18:49:15+01:00 [info]: Test started: navigate-in-app @regression\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:08+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-19T18:49:15+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:08+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-19T18:49:15+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:08+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-19T18:49:15+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-19T18:49:18+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Password has been set. (value: invalid)\r\n"
+                          "text": "2026-02-19T18:49:18+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:11+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-19T18:49:19+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:11+01:00 [info]: ✅ Login page is visible\r\n"
+                          "text": "DEBUG APP\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:13+01:00 [info]: ✅ Error message is visible\r\n"
+                          "text": "DEBUG SIDEBAR\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Username has been set. (value: invalid)\r\n"
+                          "text": "2026-02-19T18:49:21+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-19T18:49:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:13+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-19T18:49:23+01:00 [info]: 🟦 'PIM' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-17T20:14:13+01:00 [info]: ✅ Login page is visible\r\n"
-                        },
-                        {
-                          "text": "2026-02-17T20:14:15+01:00 [info]: ✅ Error message is visible\r\n"
+                          "text": "2026-02-19T18:49:26+01:00 [info]: 🟦 'My Info' menu has been selected\r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Attempt to login (invalid password)",
-                          "duration": 939
+                          "title": "Attempt to login",
+                          "duration": 2300
                         },
                         {
-                          "title": "Check if Error Message",
-                          "duration": 2029
+                          "title": "Navigate in app",
+                          "duration": 2957
                         },
                         {
-                          "title": "Attempt to login (invalid username)",
-                          "duration": 85
+                          "title": "Check Admin Menu",
+                          "duration": 19
                         },
                         {
-                          "title": "Check if Error Message",
-                          "duration": 1810
+                          "title": "Select PIM menu",
+                          "duration": 1919
+                        },
+                        {
+                          "title": "Select My Info menu",
+                          "duration": 2165
                         }
                       ],
-                      "startTime": "2026-02-17T19:14:08.041Z",
+                      "startTime": "2026-02-19T17:49:15.144Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -191,9 +192,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "dd9b2edffe9b7501040c-31bb75755cdd17ab56f7",
-              "file": "example.spec.js",
-              "line": 40,
+              "id": "ce7c070a851ea64285fd-593d7e46116f60f6140c",
+              "file": "navigation.spec.js",
+              "line": 21,
               "column": 3
             }
           ]
@@ -203,8 +204,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-17T19:14:07.073Z",
-    "duration": 8473.52,
+    "startTime": "2026-02-19T17:49:14.162Z",
+    "duration": 13198.315,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

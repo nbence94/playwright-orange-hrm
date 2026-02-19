@@ -1,4 +1,5 @@
 import BasePage from './base';
+import App from './app';
 
 export default class LoginPage extends BasePage {
     constructor(page) {
@@ -26,6 +27,8 @@ export default class LoginPage extends BasePage {
     async clickLoginButton() {
         await this.actions.click(this.loginButton, { errorMessage: '❌ Login button is not visible' });
         this.logger.info('🟦 Login button has been clicked');
+
+        return new App(this.page);
     }
 
     // 📌 Validations

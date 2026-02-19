@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const currentDir = __dirname;
 const srcDir = path.resolve(currentDir, "..");
 
-const loggingDir = path.resolve(srcDir, "logging");
+const loggingDir = path.resolve(srcDir, "data/logs");
 
 const customFormat = winston.format.printf(({ level, message, timestamp }) => {
   return `${timestamp} [${level}]: ${message}`;
