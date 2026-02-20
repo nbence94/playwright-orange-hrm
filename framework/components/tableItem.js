@@ -10,11 +10,8 @@ export default class TableItem extends BasePage {
     this.table = page.locator('div.oxd-table');
     this.rows = this.table.locator('.oxd-table-body .oxd-table-row');
     this.headers = this.table.locator('.oxd-table-header-cell');
+    this.cell = (row, index) => row.locator('//div[@role="cell"]/div[not(@class)]').nth(index);
   }
-
-  // -------------------------
-  // INTERNAL HELPERS
-  // -------------------------
 
   async _getColumnIndex(columnKey) {
     const columnName = this.columnMap[columnKey];
@@ -34,7 +31,7 @@ export default class TableItem extends BasePage {
 
   async _getCell(row, columnKey) {
     const index = await this._getColumnIndex(columnKey);
-    return row.locator('//div[@role="cell"]/div[not(@class)]').nth(index);
+    return this.cell(row, index);
   }
 
   async _findRowBy(columnKey, value) {
