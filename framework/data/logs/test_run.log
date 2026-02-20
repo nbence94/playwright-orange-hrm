@@ -376,3 +376,98 @@
 2026-02-20T21:25:54+01:00 [info]: 🟦 User has been selected.
 2026-02-20T21:25:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
 2026-02-20T21:25:58+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:05:08+01:00 [info]: ----------------------------------------
+2026-02-20T22:05:08+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:05:08+01:00 [info]: Test retry: 1
+2026-02-20T22:05:08+01:00 [info]: Test project: regression
+2026-02-20T22:05:08+01:00 [info]: ----------------------------------------
+2026-02-20T22:05:14+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:05:14+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:05:14+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:05:17+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:05:18+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:05:21+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:05:25+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:05:27+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:08:11+01:00 [info]: ----------------------------------------
+2026-02-20T22:08:11+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:08:11+01:00 [info]: Test retry: 1
+2026-02-20T22:08:11+01:00 [info]: Test project: regression
+2026-02-20T22:08:11+01:00 [info]: ----------------------------------------
+2026-02-20T22:08:15+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:08:15+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:08:15+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:08:19+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:08:20+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:08:22+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:08:24+01:00 [info]: 🟦 User data: ["FMLName1","ESS","FName LName","Enabled"]
+2026-02-20T22:08:27+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:08:29+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:09:14+01:00 [info]: ----------------------------------------
+2026-02-20T22:09:14+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:09:14+01:00 [info]: Test retry: 1
+2026-02-20T22:09:14+01:00 [info]: Test project: regression
+2026-02-20T22:09:14+01:00 [info]: ----------------------------------------
+2026-02-20T22:09:19+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:09:19+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:09:19+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:09:25+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:09:26+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:09:29+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:09:31+01:00 [info]: 🟦 User data: [
+  "FMLName1",
+  "ESS",
+  "FName LName",
+  "Enabled"
+]
+2026-02-20T22:09:33+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:09:35+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:10:28+01:00 [info]: ----------------------------------------
+2026-02-20T22:10:28+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:10:28+01:00 [info]: Test retry: 1
+2026-02-20T22:10:28+01:00 [info]: Test project: regression
+2026-02-20T22:10:28+01:00 [info]: ----------------------------------------
+2026-02-20T22:10:31+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:10:31+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:10:32+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:10:35+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:10:36+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:10:38+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:10:40+01:00 [info]: 🟦 User data: {
+  "Username": "FMLName1",
+  "User Role": "ESS",
+  "Employee Name": "FName LName",
+  "Status": "Enabled"
+}
+2026-02-20T22:10:42+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:10:44+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:12:26+01:00 [info]: ----------------------------------------
+2026-02-20T22:12:26+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:12:26+01:00 [info]: Test retry: 1
+2026-02-20T22:12:26+01:00 [info]: Test project: regression
+2026-02-20T22:12:26+01:00 [info]: ----------------------------------------
+2026-02-20T22:12:29+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:12:29+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:12:29+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:12:33+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:12:34+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:12:34+01:00 [info]: 🟦 All user data: [{"Username":"Admin","User Role":"Admin","Employee Name":"manda user","Status":"Enabled"},{"Username":"FMLName","User Role":"ESS","Employee Name":"Qwerty LName","Status":"Enabled"},{"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"},{"Username":"Jobinsam@6742","User Role":"ESS","Employee Name":"Jobin Sam","Status":"Enabled"},{"Username":"Luis1","User Role":"ESS","Employee Name":"Luis 1","Status":"Enabled"},{"Username":"title104_csmith","User Role":"ESS","Employee Name":"Lori Hart","Status":"Enabled"},{"Username":"title1_huntsusan","User Role":"ESS","Employee Name":"Aaron Huff","Status":"Enabled"},{"Username":"title1_stephenmathis","User Role":"ESS","Employee Name":"Daniel Fuller","Status":"Enabled"},{"Username":"title2_dmiller","User Role":"ESS","Employee Name":"Diane Harrison","Status":"Enabled"},{"Username":"title2_jonesashley","User Role":"ESS","Employee Name":"Timothy Sanchez","Status":"Enabled"}]
+2026-02-20T22:12:36+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:12:38+01:00 [info]: 🟦 User data: {"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"}
+2026-02-20T22:12:40+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:12:42+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-20T22:12:57+01:00 [info]: ----------------------------------------
+2026-02-20T22:12:57+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:12:57+01:00 [info]: Test retry: 1
+2026-02-20T22:12:57+01:00 [info]: Test project: regression
+2026-02-20T22:12:57+01:00 [info]: ----------------------------------------
+2026-02-20T22:13:00+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:13:00+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:13:00+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:13:04+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:13:05+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:13:05+01:00 [info]: 🟦 All user data: []
+2026-02-20T22:13:07+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:13:09+01:00 [info]: 🟦 User data: {"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"}
+2026-02-20T22:13:11+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:13:13+01:00 [info]: ✅ User exists. (user: FMLName1)

@@ -13,6 +13,15 @@ export default class TableItem extends BasePage {
     this.cell = (row, index) => row.locator('//div[@role="cell"]/div[not(@class)]').nth(index);
   }
 
+  async _getCellsData(row) {
+    const cells = {};
+    for (const [key, value] of Object.entries(this.columnMap)) {
+      const cell = await this._getCell(row, key);
+      cells[value] = await this.actions.readText(cell, { errorMessage: `❌ Failed to read ${value} (tableItem.js)` });
+    }
+    return cells;
+  }
+
   async _getColumnIndex(columnKey) {
     const columnName = this.columnMap[columnKey];
     let headers = await this.actions.readAllText(this.headers, { errorMessage: '❌ Failed to read all headers (tableItem.js)' });
@@ -50,4 +59,5 @@ export default class TableItem extends BasePage {
 
     throw new Error(`❌ Row not found: ${columnKey}=${value} (tableItem.js)`);
   }
+  
 }

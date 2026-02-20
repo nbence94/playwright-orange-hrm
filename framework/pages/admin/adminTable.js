@@ -40,6 +40,24 @@ export default class AdminTable extends TableItem{
     this.logger.info(`🟦 User has been selected to delete. (confirmed:${options.cofirm})`);
   }
 
+  async readDataByUsername(username) {
+    const row = await this._findRowBy('username', username);
+    const data = await this._getCellsData(row);
+
+    this.logger.info(`🟦 User data: ${JSON.stringify(data)}`);
+    return data;
+  }
+
+  async readAllData() {
+    const rows = this.rows;
+    const data = [];
+    for (const row of await rows.all()) {
+      data.push(await this._getCellsData(row));
+    }
+    this.logger.info(`🟦 All user data: ${JSON.stringify(data, null, 2)}`);
+    return data;
+  }
+
   async checkIfUserExists(username, { shouldExist = true }) {
     const row = await this._findRowBy('username', username);
     const result = row !== null;

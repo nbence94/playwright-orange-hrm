@@ -62,9 +62,17 @@ test.describe('Navigation Tests', () => {
       await app.admin.checkTitle();
     });
 
+    await test.step("Read all user data", async () => {
+      await app.admin.table.readAllData();
+    });
+
     let username= 'FMLName1';
     await test.step("Select user", async () => {
       await app.admin.table.selectByUsername(username);
+    });
+
+    await test.step("Read user data", async () => {
+      const userData = await app.admin.table.readDataByUsername(username);
     });
 
     await test.step.skip("Open edit user", async () => {
