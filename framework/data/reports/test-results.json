@@ -97,7 +97,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "navigate-in-app @regression",
+              "title": "admin-functions @regression",
               "ok": true,
               "tags": [
                 "regression"
@@ -114,50 +114,47 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11883,
+                      "duration": 14299,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "2026-02-19T18:49:15+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-20T21:25:44+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:15+01:00 [info]: Test started: navigate-in-app @regression\r\n"
+                          "text": "2026-02-20T21:25:44+01:00 [info]: Test started: admin-functions @regression\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:15+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-20T21:25:44+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:15+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-20T21:25:44+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:15+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-20T21:25:44+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:18+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-20T21:25:48+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:18+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-20T21:25:48+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:19+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-20T21:25:49+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "DEBUG APP\n"
+                          "text": "2026-02-20T21:25:51+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "DEBUG SIDEBAR\n"
+                          "text": "2026-02-20T21:25:52+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:21+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
+                          "text": "2026-02-20T21:25:54+01:00 [info]: 🟦 User has been selected.\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-20T21:25:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
                         },
                         {
-                          "text": "2026-02-19T18:49:23+01:00 [info]: 🟦 'PIM' menu has been selected\r\n"
-                        },
-                        {
-                          "text": "2026-02-19T18:49:26+01:00 [info]: 🟦 'My Info' menu has been selected\r\n"
+                          "text": "2026-02-20T21:25:58+01:00 [info]: ✅ User exists. (user: FMLName1)\r\n"
                         }
                       ],
                       "stderr": [],
@@ -165,26 +162,34 @@
                       "steps": [
                         {
                           "title": "Attempt to login",
-                          "duration": 2300
+                          "duration": 2159
                         },
                         {
                           "title": "Navigate in app",
-                          "duration": 2957
+                          "duration": 3097
                         },
                         {
                           "title": "Check Admin Menu",
-                          "duration": 19
+                          "duration": 14
                         },
                         {
-                          "title": "Select PIM menu",
-                          "duration": 1919
+                          "title": "Select user",
+                          "duration": 2103
                         },
                         {
-                          "title": "Select My Info menu",
-                          "duration": 2165
+                          "title": "Open edit user",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Delete user",
+                          "duration": 2135
+                        },
+                        {
+                          "title": "Check if user does not exist",
+                          "duration": 2074
                         }
                       ],
-                      "startTime": "2026-02-19T17:49:15.144Z",
+                      "startTime": "2026-02-20T20:25:44.641Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -192,9 +197,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "ce7c070a851ea64285fd-593d7e46116f60f6140c",
+              "id": "ce7c070a851ea64285fd-d93ef137dc7ebb434f77",
               "file": "navigation.spec.js",
-              "line": 21,
+              "line": 48,
               "column": 3
             }
           ]
@@ -204,8 +209,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-19T17:49:14.162Z",
-    "duration": 13198.315,
+    "startTime": "2026-02-20T20:25:43.674Z",
+    "duration": 15625.497000000001,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

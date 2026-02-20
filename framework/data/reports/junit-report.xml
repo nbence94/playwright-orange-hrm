@@ -1,21 +1,20 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.198315000000001">
-<testsuite name="navigation.spec.js" timestamp="2026-02-19T17:49:14.296Z" hostname="regression" tests="1" failures="0" skipped="0" time="11.883" errors="0">
-<testcase name="Navigation Tests › navigate-in-app @regression" classname="navigation.spec.js" time="11.883">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.625497000000001">
+<testsuite name="navigation.spec.js" timestamp="2026-02-20T20:25:43.791Z" hostname="regression" tests="1" failures="0" skipped="0" time="14.299" errors="0">
+<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="14.299">
 <system-out>
-<![CDATA[2026-02-19T18:49:15+01:00 [info]: ----------------------------------------
-2026-02-19T18:49:15+01:00 [info]: Test started: navigate-in-app @regression
-2026-02-19T18:49:15+01:00 [info]: Test retry: 1
-2026-02-19T18:49:15+01:00 [info]: Test project: regression
-2026-02-19T18:49:15+01:00 [info]: ----------------------------------------
-2026-02-19T18:49:18+01:00 [info]: 🟦 Username has been set. (value: Admin)
-2026-02-19T18:49:18+01:00 [info]: 🟦 Password has been set. (value: admin123)
-2026-02-19T18:49:19+01:00 [info]: 🟦 Login button has been clicked
-DEBUG APP
-DEBUG SIDEBAR
-2026-02-19T18:49:21+01:00 [info]: 🟦 'Admin' menu has been selected
-2026-02-19T18:49:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!
-2026-02-19T18:49:23+01:00 [info]: 🟦 'PIM' menu has been selected
-2026-02-19T18:49:26+01:00 [info]: 🟦 'My Info' menu has been selected
+<![CDATA[2026-02-20T21:25:44+01:00 [info]: ----------------------------------------
+2026-02-20T21:25:44+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T21:25:44+01:00 [info]: Test retry: 1
+2026-02-20T21:25:44+01:00 [info]: Test project: regression
+2026-02-20T21:25:44+01:00 [info]: ----------------------------------------
+2026-02-20T21:25:48+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T21:25:48+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T21:25:49+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T21:25:51+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T21:25:52+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T21:25:54+01:00 [info]: 🟦 User has been selected.
+2026-02-20T21:25:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T21:25:58+01:00 [info]: ✅ User exists. (user: FMLName1)
 ]]>
 </system-out>
 </testcase>

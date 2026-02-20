@@ -7,7 +7,7 @@ export default class Actions {
   }
 
   async click(locator, options = {}) {
-    const { errorMessage = 'Click failed', soft = false, silent = false, timeout } = options;
+    const { errorMessage = '❌ Click failed', soft = false, silent = false, timeout } = options;
 
     try {
       await locator.waitFor({ state: 'visible', timeout });
@@ -26,11 +26,49 @@ export default class Actions {
   }
 
   async fill(locator, text, options = {}) {
-    const { errorMessage = 'Fill failed', soft = false, silent = false, timeout } = options;
+    const { errorMessage = '❌ Fill failed', soft = false, silent = false, timeout } = options;
 
     try {
       await locator.waitFor({ state: 'visible', timeout });
       await locator.fill(text, { timeout });
+    } catch (err) {
+
+      if(silent) return;
+      logger.error(errorMessage);
+      if (soft) {
+        ErrorHandler.addError(errorMessage, err);
+        return;
+      }
+
+      throw err;
+    }
+  }
+
+  async readAllText(locator, options = {}) {
+    const { errorMessage = '❌ Read all text failed', soft = false, silent = false, timeout } = options;
+
+    try {
+      await locator.first().waitFor({ state: 'visible', timeout });
+      return await locator.allTextContents();
+    } catch (err) {
+
+      if(silent) return;
+      logger.error(errorMessage);
+      if (soft) {
+        ErrorHandler.addError(errorMessage, err);
+        return;
+      }
+
+      throw err;
+    }
+  }
+
+  async readText(locator, options = {}) {
+    const { errorMessage = '❌ Read text failed', soft = false, silent = false, timeout } = options;
+
+    try {
+      await locator.waitFor({ state: 'visible', timeout });
+      return await locator.textContent();
     } catch (err) {
 
       if(silent) return;
