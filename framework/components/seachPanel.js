@@ -1,6 +1,6 @@
 import BasePage from "../pages/basePage";
 
-export default class SearchBar extends BasePage {
+export default class SearchPanel extends BasePage {
     constructor(page, searchItems) {
         super(page);
         this.searchItems = searchItems;
