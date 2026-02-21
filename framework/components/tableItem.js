@@ -59,5 +59,9 @@ export default class TableItem extends BasePage {
 
     throw new Error(`❌ Row not found: ${columnKey}=${value} (tableItem.js)`);
   }
+
+  async isLoaded() {
+    await this.validations.isVisible(this.headers.first() , { errorMessage: '❌ Loader is not visible (tableItem.js)', timeout: 10000 });
+  }
   
 }

@@ -46,6 +46,18 @@ export default class Validations {
     }, 'Checkbox is not checked', options);
   }
 
+  async equal(actual, expected, options = {}) {
+    return this.#executeValidation(() => {
+      return actual === expected;
+    }, `Values do not match. Expected: "${expected}", Actual: "${actual}"`, options);
+  }
+
+  async includes(actual, expected, options = {}) {
+    return this.#executeValidation(() => {
+      return actual.includes(expected);
+    }, `Value does not include: "${expected}", Actual: "${actual}"`, options);
+  }
+
   // =========================
   // CORE VALIDATION ENGINE
   // =========================

@@ -114,59 +114,92 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 18967,
+                      "duration": 29782,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "2026-02-21T17:05:25+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T17:53:29+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:25+01:00 [info]: Test started: admin-functions @regression\r\n"
+                          "text": "2026-02-21T17:53:29+01:00 [info]: Test started: admin-functions @regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:25+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-21T17:53:29+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:25+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-21T17:53:29+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:25+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T17:53:29+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:28+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-21T17:53:32+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:28+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-21T17:53:32+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:29+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-21T17:53:33+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:32+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
+                          "text": "2026-02-21T17:53:35+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:33+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T17:53:36+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:34+01:00 [info]: 🟦 Set user data 'autoTest01' (username)\r\n"
+                          "text": "2026-02-21T17:53:38+01:00 [info]: 🟦 Add User button clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:35+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                          "text": "2026-02-21T17:53:39+01:00 [info]: ✅ Add User Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:35+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
+                          "text": "2026-02-21T17:53:40+01:00 [info]: 🟦 Set user data 'ESS' (userRole)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:37+01:00 [info]: 🟦 User has been selected.\r\n"
+                          "text": "2026-02-21T17:53:42+01:00 [info]: 🟦 User 'Timothy' has been set\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:39+01:00 [info]: 🟦 User data: {\"Username\":\"autoTest01\",\"User Role\":\"ESS\",\"Employee Name\":\"Timothy Amiano\",\"Status\":\"Enabled\"}\r\n"
+                          "text": "2026-02-21T17:53:42+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:42+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
+                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:05:44+01:00 [info]: ✅ User exists. (user: autoTest01)\r\n"
+                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (password)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Save button clicked\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:49+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:49+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:50+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:50+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:52+01:00 [info]: 🟦 User has been selected.\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:54+01:00 [info]: 🟦 User data: {\"Username\":\"autoTest06\",\"User Role\":\"ESS\",\"Employee Name\":\"Timothy Amiano\",\"Status\":\"Enabled\"}\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T17:53:58+01:00 [info]: ✅ User exists. (user: autoTest06)\r\n"
                         }
                       ],
                       "stderr": [],
@@ -174,11 +207,11 @@
                       "steps": [
                         {
                           "title": "Attempt to login",
-                          "duration": 2157
+                          "duration": 2273
                         },
                         {
                           "title": "Navigate in app",
-                          "duration": 3260
+                          "duration": 2919
                         },
                         {
                           "title": "Check Admin Menu",
@@ -186,23 +219,23 @@
                         },
                         {
                           "title": "Read all user data",
-                          "duration": 1518
+                          "duration": 1760
                         },
                         {
                           "title": "Create User",
-                          "duration": 0
+                          "duration": 10799
                         },
                         {
                           "title": "Filter by username",
-                          "duration": 1135
+                          "duration": 1123
                         },
                         {
                           "title": "Select user",
-                          "duration": 2063
+                          "duration": 2075
                         },
                         {
                           "title": "Read user data",
-                          "duration": 2079
+                          "duration": 2074
                         },
                         {
                           "title": "Open edit user",
@@ -210,14 +243,14 @@
                         },
                         {
                           "title": "Delete user",
-                          "duration": 2096
+                          "duration": 2093
                         },
                         {
                           "title": "Check if user does exist",
-                          "duration": 2025
+                          "duration": 2026
                         }
                       ],
-                      "startTime": "2026-02-21T16:05:25.114Z",
+                      "startTime": "2026-02-21T16:53:28.660Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -237,8 +270,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-21T16:05:24.042Z",
-    "duration": 20414.171000000002,
+    "startTime": "2026-02-21T16:53:27.647Z",
+    "duration": 31168.39,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
