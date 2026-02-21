@@ -1,22 +1,22 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="17.566433999999997">
-<testsuite name="navigation.spec.js" timestamp="2026-02-20T21:12:56.407Z" hostname="regression" tests="1" failures="0" skipped="0" time="16.352" errors="0">
-<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="16.352">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.28189">
+<testsuite name="navigation.spec.js" timestamp="2026-02-20T21:32:26.405Z" hostname="regression" tests="1" failures="0" skipped="0" time="20.051" errors="0">
+<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="20.051">
 <system-out>
-<![CDATA[2026-02-20T22:12:57+01:00 [info]: ----------------------------------------
-2026-02-20T22:12:57+01:00 [info]: Test started: admin-functions @regression
-2026-02-20T22:12:57+01:00 [info]: Test retry: 1
-2026-02-20T22:12:57+01:00 [info]: Test project: regression
-2026-02-20T22:12:57+01:00 [info]: ----------------------------------------
-2026-02-20T22:13:00+01:00 [info]: 🟦 Username has been set. (value: Admin)
-2026-02-20T22:13:00+01:00 [info]: 🟦 Password has been set. (value: admin123)
-2026-02-20T22:13:00+01:00 [info]: 🟦 Login button has been clicked
-2026-02-20T22:13:04+01:00 [info]: 🟦 'Admin' menu has been selected
-2026-02-20T22:13:05+01:00 [info]: ✅ Admin Menu has been loaded successfully!
-2026-02-20T22:13:05+01:00 [info]: 🟦 All user data: []
-2026-02-20T22:13:07+01:00 [info]: 🟦 User has been selected.
-2026-02-20T22:13:09+01:00 [info]: 🟦 User data: {"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"}
-2026-02-20T22:13:11+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
-2026-02-20T22:13:13+01:00 [info]: ✅ User exists. (user: FMLName1)
+<![CDATA[2026-02-20T22:32:27+01:00 [info]: ----------------------------------------
+2026-02-20T22:32:27+01:00 [info]: Test started: admin-functions @regression
+2026-02-20T22:32:27+01:00 [info]: Test retry: 1
+2026-02-20T22:32:27+01:00 [info]: Test project: regression
+2026-02-20T22:32:27+01:00 [info]: ----------------------------------------
+2026-02-20T22:32:33+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-20T22:32:33+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-20T22:32:33+01:00 [info]: 🟦 Login button has been clicked
+2026-02-20T22:32:37+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-20T22:32:38+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-20T22:32:38+01:00 [info]: 🟦 All user data: []
+2026-02-20T22:32:40+01:00 [info]: 🟦 User has been selected.
+2026-02-20T22:32:42+01:00 [info]: 🟦 User data: {"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"}
+2026-02-20T22:32:45+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-20T22:32:47+01:00 [info]: ✅ User exists. (user: FMLName1)
 ]]>
 </system-out>
 </testcase>

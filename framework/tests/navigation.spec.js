@@ -86,7 +86,6 @@ test.describe('Navigation Tests', () => {
     await test.step("Check if user does exist", async () => {
       await app.admin.table.checkIfUserExists(username, { shouldExist: true });
     });
-
     
   }); 
 
