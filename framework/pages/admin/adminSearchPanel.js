@@ -11,15 +11,15 @@ export default class AdminSearchPanel extends SearchPanel {
     }
 
     async filterByUsername(username) {
-        await this._setSearchValue('username', username);
+        await this.fill('username', username);
     }
     
     async filterByEmployeeName(employeeName) {
-        await this._setSearchValue('employeeName', employeeName);
+        await this.fill('employeeName', employeeName);
     }
     
     async filterByStatus(status) {
-        await this._selectDropdownValue('status', status);
+        await this.select('status', status);
     }
 
 

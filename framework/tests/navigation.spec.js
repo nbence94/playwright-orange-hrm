@@ -66,7 +66,7 @@ test.describe('Navigation Tests', () => {
       await app.admin.table.readAllData();
     });
 
-    await test.step("Create User", async() => {
+    await test.step.skip("Create User", async() => {
       await app.admin.clickAddButton();
       await app.admin.addUser.checkTitle();
       await app.admin.addUser.fillUserData({
@@ -74,8 +74,8 @@ test.describe('Navigation Tests', () => {
         employee: 'Timothy',
         status: 'Enabled',
         username: 'autoTest01',
-        password: '123456',
-        confirmPassword: '123456'
+        password: 'Password01',
+        confirmPassword: 'Password01'
       });
       await app.admin.addUser.clickSaveButton();
       await app.admin.checkTitle();

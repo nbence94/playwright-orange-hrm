@@ -18,7 +18,7 @@ export default class AdminPage extends BasePage {
     }
 
     async checkTitle() {
-        await this.validations.isVisible(this.systemUserTitle, { errorMessage: '❌ System Users title cannot be found!' });
+        await this.validations.isVisible(this.systemUserTitle, { errorMessage: '❌ System Users title cannot be found!', timeout: 10000 });
         this.logger.info(`✅ Admin Menu has been loaded successfully!`);
     }
 

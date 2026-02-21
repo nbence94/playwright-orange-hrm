@@ -1,7 +1,9 @@
 import BasePage from "../pages/base";
 import Dropdown from "./dropDown";
+import AutoComplete from "./autoComplete";
 
 export default class BaseForm extends BasePage {
+
     constructor(page, schema) {
         super(page);
         this.schema = schema;
@@ -25,9 +27,16 @@ export default class BaseForm extends BasePage {
         this.logger.info(`🟦 Set user data '${value}' (${item})`);
     }
 
+    async autoComplete(item, value) {
+        const autoComplete = new AutoComplete(this.page, this.item(item));
+        await autoComplete.search(value);
+        this.logger.info(`🟦 Set user data '${value}' (${item})`);
+    }
+
     async clickSaveButton() {
         await this.actions.click(this.saveButton, { errorMessage: '❌ Save button cannot be found!' });
         this.logger.info(`🟦 Save button clicked`);
+        await this.page.waitForTimeout(5000);
     }
 
     async clickCancelButton() {

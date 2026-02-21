@@ -16,16 +16,16 @@ export default class AdminAddUserForm extends BaseForm {
     this.title = this.page.locator("//h6[normalize-space()='Add User']");
   }
 
-  async setEmployee(name) {
+  /*async setEmployee(name) {
     const group = this.item('employeeName');
     const ac = new AutoComplete(this.page, group);
 
     await ac.search(name);
-  }
+  }*/
 
   async fillUserData(data) {
     await this.select('userRole', data.role);
-    await this.setEmployee(data.employee);
+    await this.autoComplete('employeeName', data.employee);
     await this.select('status', data.status);
     await this.fill('username', data.username);
     await this.fill('password', data.password);
