@@ -10,7 +10,6 @@ export default class SearchPanel extends BasePage {
         // elements
         this.resetButton = this.page.getByRole('button', { name: /reset/i });
         this.searchButton = this.page.getByRole('button', { name: /search/i });
-
         this.item = (item) => this.page.locator(`//label[normalize-space()='${this.searchItems[item]}']/parent::div/parent::div`);
         this.inputItem = (item) => this.item(item).locator(`//input`);
 
