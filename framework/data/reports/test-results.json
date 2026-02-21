@@ -113,100 +113,103 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 25273,
+                      "status": "timedOut",
+                      "duration": 30179,
                       "error": {
-                        "message": "ReferenceError: username is not defined",
-                        "stack": "ReferenceError: username is not defined\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16",
-                        "location": {
-                          "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
-                          "column": 46,
-                          "line": 93
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
                           "location": {
-                            "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
-                            "column": 46,
-                            "line": 93
+                            "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\components\\tableItem.js",
+                            "column": 21,
+                            "line": 47
                           },
-                          "message": "ReferenceError: username is not defined\n\n\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\u001b[22m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16\u001b[22m"
+                          "message": "Error: page.waitForTimeout: Test timeout of 30000ms exceeded.\n\n\u001b[90m   at \u001b[39m..\\components\\tableItem.js:47\n\n\u001b[0m \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m _findRowBy(columnKey\u001b[33m,\u001b[39m value) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mwaitFor({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrows\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[0m\n\u001b[2m    at AdminTable._findRowBy (F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\components\\tableItem.js:47:21)\u001b[22m\n\u001b[2m    at AdminTable.deleteByUsername (F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\pages\\admin\\adminTable.js:33:28)\u001b[22m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:105:29\u001b[22m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:104:16\u001b[22m"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "2026-02-21T18:16:58+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T18:18:17+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:16:58+01:00 [info]: Test started: admin-functions @regression\r\n"
+                          "text": "2026-02-21T18:18:17+01:00 [info]: Test started: admin-functions @regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:16:58+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-21T18:18:17+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:16:58+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-21T18:18:17+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:16:58+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T18:18:17+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:04+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-21T18:18:20+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:04+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-21T18:18:20+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:06+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-21T18:18:20+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:08+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
+                          "text": "2026-02-21T18:18:24+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:09+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:18:25+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:11+01:00 [info]: 🟦 Add User button clicked\r\n"
+                          "text": "2026-02-21T18:18:28+01:00 [info]: 🟦 Add User button clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:12+01:00 [info]: ✅ Add User Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:18:29+01:00 [info]: ✅ Add User Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:13+01:00 [info]: 🟦 Set user data 'ESS' (userRole)\r\n"
+                          "text": "2026-02-21T18:18:30+01:00 [info]: 🟦 Set user data 'ESS' (userRole)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:15+01:00 [info]: 🟦 User 'Timothy' has been set\r\n"
+                          "text": "2026-02-21T18:18:31+01:00 [info]: 🟦 User 'Timothy' has been set\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:15+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)\r\n"
+                          "text": "2026-02-21T18:18:31+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                          "text": "2026-02-21T18:18:32+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                          "text": "2026-02-21T18:18:32+01:00 [info]: 🟦 Set user data 'autoTest01' (username)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (password)\r\n"
+                          "text": "2026-02-21T18:18:32+01:00 [info]: 🟦 Set user data 'Password01' (password)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)\r\n"
+                          "text": "2026-02-21T18:18:32+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Save button clicked\r\n"
+                          "text": "2026-02-21T18:18:32+01:00 [info]: 🟦 Save button clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:18:40+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:22+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                          "text": "2026-02-21T18:18:40+01:00 [info]: 🟦 Set user data 'autoTest01' (username)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:23+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                          "text": "2026-02-21T18:18:41+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
                         },
                         {
-                          "text": "2026-02-21T18:17:23+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
+                          "text": "2026-02-21T18:18:41+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T18:18:43+01:00 [info]: 🟦 User has been selected.\r\n"
+                        },
+                        {
+                          "text": "2026-02-21T18:18:46+01:00 [info]: 🟦 User data: {\"Username\":\"autoTest01\",\"User Role\":\"ESS\",\"Employee Name\":\"Timothy Amiano\",\"Status\":\"Enabled\"}\r\n"
                         }
                       ],
                       "stderr": [],
@@ -214,44 +217,56 @@
                       "steps": [
                         {
                           "title": "Attempt to login",
-                          "duration": 2345
+                          "duration": 977
                         },
                         {
                           "title": "Navigate in app",
-                          "duration": 3204
+                          "duration": 5354
                         },
                         {
                           "title": "Check Admin Menu",
-                          "duration": 14
+                          "duration": 21
                         },
                         {
                           "title": "Read all user data",
-                          "duration": 1794
+                          "duration": 1859
                         },
                         {
                           "title": "Create User",
-                          "duration": 11407
+                          "duration": 12983
                         },
                         {
                           "title": "Filter by username",
-                          "duration": 1146
+                          "duration": 1155
                         },
                         {
                           "title": "Select user",
-                          "duration": 1,
+                          "duration": 2054
+                        },
+                        {
+                          "title": "Read user data",
+                          "duration": 2072
+                        },
+                        {
+                          "title": "Open edit user",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Delete user",
+                          "duration": 1207,
                           "error": {
-                            "message": "ReferenceError: username is not defined",
-                            "stack": "ReferenceError: username is not defined\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16",
+                            "message": "Error: page.waitForTimeout: Test timeout of 30000ms exceeded.",
+                            "stack": "Error: page.waitForTimeout: Test timeout of 30000ms exceeded.\n    at AdminTable._findRowBy (F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\components\\tableItem.js:47:21)\n    at AdminTable.deleteByUsername (F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\pages\\admin\\adminTable.js:33:28)\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:105:29\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:104:16",
                             "location": {
-                              "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
-                              "column": 46,
-                              "line": 93
+                              "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\components\\tableItem.js",
+                              "column": 21,
+                              "line": 47
                             },
-                            "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                            "snippet": "\u001b[90m   at \u001b[39m..\\components\\tableItem.js:47\n\n\u001b[0m \u001b[90m 45 |\u001b[39m\n \u001b[90m 46 |\u001b[39m   \u001b[36masync\u001b[39m _findRowBy(columnKey\u001b[33m,\u001b[39m value) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mwaitFor({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mrows\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m   \u001b[0m"
                           }
                         }
                       ],
-                      "startTime": "2026-02-21T17:16:57.936Z",
+                      "startTime": "2026-02-21T17:18:17.108Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -269,12 +284,7 @@
                           "contentType": "text/markdown",
                           "path": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\test-results\\navigation-Navigation-Tests-admin-functions-regression-regression\\error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
-                        "column": 46,
-                        "line": 93
-                      }
+                      ]
                     }
                   ],
                   "status": "unexpected"
@@ -292,8 +302,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-21T17:16:56.687Z",
-    "duration": 27471.128999999997,
+    "startTime": "2026-02-21T17:18:15.934Z",
+    "duration": 31498.577,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
