@@ -66,7 +66,13 @@ test.describe('Navigation Tests', () => {
       await app.admin.table.readAllData();
     });
 
-    let username= 'Alec5436';
+    let username= 'FMLName1';
+    await test.step("Filter by username", async () => {
+      await app.admin.searchPanel.filterByUsername(username);
+      await app.admin.searchPanel.filterByStatus('Enabled');
+      await app.admin.searchPanel.clickSearchButton();
+    });
+
     await test.step("Select user", async () => {
       await app.admin.table.selectByUsername(username);
     });

@@ -1,15 +1,18 @@
-import BasePage from "../pages/basePage";
+import BasePage from "../pages/base.js";
+import Dropdown from "./dropDown.js";
 
 export default class SearchPanel extends BasePage {
     constructor(page, searchItems) {
         super(page);
         this.searchItems = searchItems;
 
+
         // elements
         this.resetButton = this.page.getByRole('button', { name: /reset/i });
         this.searchButton = this.page.getByRole('button', { name: /search/i });
 
-        this.inputItem = (item) => this.page.locator(`//label[normalize-space()='${item}']/parent::div/parent::div//input`)
+        this.item = (item) => this.page.locator(`//label[normalize-space()='${this.searchItems[item]}']/parent::div/parent::div`);
+        this.inputItem = (item) => this.item(item).locator(`//input`);
 
     }
 
@@ -23,12 +26,15 @@ export default class SearchPanel extends BasePage {
         this.logger.info("🟦 Clicked 'Search' button");
     }
 
-    async setSearchValue(item, value) {
+    async _setSearchValue(item, value) {
         await this.actions.fill(this.inputItem(item), value, { errorMessage: "❌ Failed to set value for 'Search' field" });
-        this.logger.info(`🟦 Set value '${value}' for '${item}'`);
+        this.logger.info(`🟦 Filtering: '${value}' (${item})`);
+    }
+    
+    async _selectDropdownValue(item, value) {
+        const dropdown = new Dropdown(this.page, this.item(item).locator(`//div[@class='oxd-select-wrapper']`));
+        await dropdown.select(value);
+        this.logger.info(`🟦 Filtering: '${value}' (${item})`);
     }
 
 }
-
-
-// //div[@role='listbox']
