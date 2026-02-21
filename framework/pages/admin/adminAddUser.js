@@ -14,14 +14,9 @@ export default class AdminAddUserForm extends BaseForm {
     });
 
     this.title = this.page.locator("//h6[normalize-space()='Add User']");
+    this.saveButton = this.page.getByRole('button', { name: /^save$/i });
+    this.cancelButton = this.page.getByRole('button', { name: /^cancel$/i });
   }
-
-  /*async setEmployee(name) {
-    const group = this.item('employeeName');
-    const ac = new AutoComplete(this.page, group);
-
-    await ac.search(name);
-  }*/
 
   async fillUserData(data) {
     await this.select('userRole', data.role);
@@ -36,5 +31,16 @@ export default class AdminAddUserForm extends BaseForm {
     await this.validations.isVisible(this.title, { errorMessage: '❌ Add User title cannot be found!' });
     this.logger.info(`✅ Add User Menu has been loaded successfully!`);
   }
+
+    async clickSaveButton() {
+        await this.actions.click(this.saveButton, { errorMessage: '❌ Save button cannot be found!' });
+        this.logger.info(`🟦 Save button clicked`);
+        await this.page.waitForTimeout(5000);
+    }
+
+    async clickCancelButton() {
+        await this.actions.click(this.cancelButton, { errorMessage: '❌ Cancel button cannot be found!' });
+        this.logger.info(`🟦 Cancel button clicked`);
+    }
 
 }
