@@ -1,35 +1,63 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="31.16839">
-<testsuite name="navigation.spec.js" timestamp="2026-02-21T16:53:27.774Z" hostname="regression" tests="1" failures="0" skipped="0" time="29.782" errors="0">
-<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="29.782">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="27.471128999999998">
+<testsuite name="navigation.spec.js" timestamp="2026-02-21T17:16:56.862Z" hostname="regression" tests="1" failures="1" skipped="0" time="25.273" errors="0">
+<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="25.273">
+<failure message="navigation.spec.js:48:3 admin-functions @regression" type="FAILURE">
+<![CDATA[  [regression] › navigation.spec.js:48:3 › Navigation Tests › admin-functions @regression › Select user 
+
+    ReferenceError: username is not defined
+
+      91 |
+      92 |     await test.step("Select user", async () => {
+    > 93 |       await app.admin.table.selectByUsername(username);
+         |                                              ^
+      94 |     });
+      95 |
+      96 |     await test.step("Read user data", async () => {
+        at F:\Developing\_Projects\git\playwright-orange-hrm\framework\tests\navigation.spec.js:93:46
+        at F:\Developing\_Projects\git\playwright-orange-hrm\framework\tests\navigation.spec.js:92:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\error-context.md
+]]>
+</failure>
 <system-out>
-<![CDATA[2026-02-21T17:53:29+01:00 [info]: ----------------------------------------
-2026-02-21T17:53:29+01:00 [info]: Test started: admin-functions @regression
-2026-02-21T17:53:29+01:00 [info]: Test retry: 1
-2026-02-21T17:53:29+01:00 [info]: Test project: regression
-2026-02-21T17:53:29+01:00 [info]: ----------------------------------------
-2026-02-21T17:53:32+01:00 [info]: 🟦 Username has been set. (value: Admin)
-2026-02-21T17:53:32+01:00 [info]: 🟦 Password has been set. (value: admin123)
-2026-02-21T17:53:33+01:00 [info]: 🟦 Login button has been clicked
-2026-02-21T17:53:35+01:00 [info]: 🟦 'Admin' menu has been selected
-2026-02-21T17:53:36+01:00 [info]: ✅ Admin Menu has been loaded successfully!
-2026-02-21T17:53:38+01:00 [info]: 🟦 Add User button clicked
-2026-02-21T17:53:39+01:00 [info]: ✅ Add User Menu has been loaded successfully!
-2026-02-21T17:53:40+01:00 [info]: 🟦 Set user data 'ESS' (userRole)
-2026-02-21T17:53:42+01:00 [info]: 🟦 User 'Timothy' has been set
-2026-02-21T17:53:42+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)
-2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Enabled' (status)
-2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
-2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (password)
-2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)
-2026-02-21T17:53:43+01:00 [info]: 🟦 Save button clicked
-2026-02-21T17:53:49+01:00 [info]: ✅ Admin Menu has been loaded successfully!
-2026-02-21T17:53:49+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
-2026-02-21T17:53:50+01:00 [info]: 🟦 Set user data 'Enabled' (status)
-2026-02-21T17:53:50+01:00 [info]: 🟦 Clicked 'Search' button
-2026-02-21T17:53:52+01:00 [info]: 🟦 User has been selected.
-2026-02-21T17:53:54+01:00 [info]: 🟦 User data: {"Username":"autoTest06","User Role":"ESS","Employee Name":"Timothy Amiano","Status":"Enabled"}
-2026-02-21T17:53:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
-2026-02-21T17:53:58+01:00 [info]: ✅ User exists. (user: autoTest06)
+<![CDATA[2026-02-21T18:16:58+01:00 [info]: ----------------------------------------
+2026-02-21T18:16:58+01:00 [info]: Test started: admin-functions @regression
+2026-02-21T18:16:58+01:00 [info]: Test retry: 1
+2026-02-21T18:16:58+01:00 [info]: Test project: regression
+2026-02-21T18:16:58+01:00 [info]: ----------------------------------------
+2026-02-21T18:17:04+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-21T18:17:04+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-21T18:17:06+01:00 [info]: 🟦 Login button has been clicked
+2026-02-21T18:17:08+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-21T18:17:09+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T18:17:11+01:00 [info]: 🟦 Add User button clicked
+2026-02-21T18:17:12+01:00 [info]: ✅ Add User Menu has been loaded successfully!
+2026-02-21T18:17:13+01:00 [info]: 🟦 Set user data 'ESS' (userRole)
+2026-02-21T18:17:15+01:00 [info]: 🟦 User 'Timothy' has been set
+2026-02-21T18:17:15+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Enabled' (status)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (password)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Save button clicked
+2026-02-21T18:17:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T18:17:22+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
+2026-02-21T18:17:23+01:00 [info]: 🟦 Set user data 'Enabled' (status)
+2026-02-21T18:17:23+01:00 [info]: 🟦 Clicked 'Search' button
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\video.webm]]
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\error-context.md]]
 ]]>
 </system-out>
 </testcase>

@@ -98,7 +98,7 @@
           "specs": [
             {
               "title": "admin-functions @regression",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "regression"
               ],
@@ -113,93 +113,100 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 29782,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 25273,
+                      "error": {
+                        "message": "ReferenceError: username is not defined",
+                        "stack": "ReferenceError: username is not defined\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16",
+                        "location": {
+                          "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
+                          "column": 46,
+                          "line": 93
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
+                            "column": 46,
+                            "line": 93
+                          },
+                          "message": "ReferenceError: username is not defined\n\n\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\u001b[22m\n\u001b[2m    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
-                          "text": "2026-02-21T17:53:29+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T18:16:58+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:29+01:00 [info]: Test started: admin-functions @regression\r\n"
+                          "text": "2026-02-21T18:16:58+01:00 [info]: Test started: admin-functions @regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:29+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-21T18:16:58+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:29+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-21T18:16:58+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:29+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T18:16:58+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:32+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-21T18:17:04+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:32+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-21T18:17:04+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:33+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-21T18:17:06+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:35+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
+                          "text": "2026-02-21T18:17:08+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:36+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:17:09+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:38+01:00 [info]: 🟦 Add User button clicked\r\n"
+                          "text": "2026-02-21T18:17:11+01:00 [info]: 🟦 Add User button clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:39+01:00 [info]: ✅ Add User Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:17:12+01:00 [info]: ✅ Add User Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:40+01:00 [info]: 🟦 Set user data 'ESS' (userRole)\r\n"
+                          "text": "2026-02-21T18:17:13+01:00 [info]: 🟦 Set user data 'ESS' (userRole)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:42+01:00 [info]: 🟦 User 'Timothy' has been set\r\n"
+                          "text": "2026-02-21T18:17:15+01:00 [info]: 🟦 User 'Timothy' has been set\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:42+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)\r\n"
+                          "text": "2026-02-21T18:17:15+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (password)\r\n"
+                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (password)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)\r\n"
+                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:43+01:00 [info]: 🟦 Save button clicked\r\n"
+                          "text": "2026-02-21T18:17:16+01:00 [info]: 🟦 Save button clicked\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:49+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T18:17:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:49+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
+                          "text": "2026-02-21T18:17:22+01:00 [info]: 🟦 Set user data 'autoTest06' (username)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:50+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
+                          "text": "2026-02-21T18:17:23+01:00 [info]: 🟦 Set user data 'Enabled' (status)\r\n"
                         },
                         {
-                          "text": "2026-02-21T17:53:50+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
-                        },
-                        {
-                          "text": "2026-02-21T17:53:52+01:00 [info]: 🟦 User has been selected.\r\n"
-                        },
-                        {
-                          "text": "2026-02-21T17:53:54+01:00 [info]: 🟦 User data: {\"Username\":\"autoTest06\",\"User Role\":\"ESS\",\"Employee Name\":\"Timothy Amiano\",\"Status\":\"Enabled\"}\r\n"
-                        },
-                        {
-                          "text": "2026-02-21T17:53:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
-                        },
-                        {
-                          "text": "2026-02-21T17:53:58+01:00 [info]: ✅ User exists. (user: autoTest06)\r\n"
+                          "text": "2026-02-21T18:17:23+01:00 [info]: 🟦 Clicked 'Search' button\r\n"
                         }
                       ],
                       "stderr": [],
@@ -207,55 +214,70 @@
                       "steps": [
                         {
                           "title": "Attempt to login",
-                          "duration": 2273
+                          "duration": 2345
                         },
                         {
                           "title": "Navigate in app",
-                          "duration": 2919
+                          "duration": 3204
                         },
                         {
                           "title": "Check Admin Menu",
-                          "duration": 18
+                          "duration": 14
                         },
                         {
                           "title": "Read all user data",
-                          "duration": 1760
+                          "duration": 1794
                         },
                         {
                           "title": "Create User",
-                          "duration": 10799
+                          "duration": 11407
                         },
                         {
                           "title": "Filter by username",
-                          "duration": 1123
+                          "duration": 1146
                         },
                         {
                           "title": "Select user",
-                          "duration": 2075
-                        },
-                        {
-                          "title": "Read user data",
-                          "duration": 2074
-                        },
-                        {
-                          "title": "Open edit user",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Delete user",
-                          "duration": 2093
-                        },
-                        {
-                          "title": "Check if user does exist",
-                          "duration": 2026
+                          "duration": 1,
+                          "error": {
+                            "message": "ReferenceError: username is not defined",
+                            "stack": "ReferenceError: username is not defined\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:93:46\n    at F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js:92:16",
+                            "location": {
+                              "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
+                              "column": 46,
+                              "line": 93
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Select user\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m       \u001b[36mawait\u001b[39m app\u001b[33m.\u001b[39madmin\u001b[33m.\u001b[39mtable\u001b[33m.\u001b[39mselectByUsername(username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Read user data\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
                         }
                       ],
-                      "startTime": "2026-02-21T16:53:28.660Z",
+                      "startTime": "2026-02-21T17:16:57.936Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\test-results\\navigation-Navigation-Tests-admin-functions-regression-regression\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\test-results\\navigation-Navigation-Tests-admin-functions-regression-regression\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\test-results\\navigation-Navigation-Tests-admin-functions-regression-regression\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "F:\\Developing\\_Projects\\git\\playwright-orange-hrm\\framework\\tests\\navigation.spec.js",
+                        "column": 46,
+                        "line": 93
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "ce7c070a851ea64285fd-d93ef137dc7ebb434f77",
@@ -270,11 +292,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-21T16:53:27.647Z",
-    "duration": 31168.39,
-    "expected": 1,
+    "startTime": "2026-02-21T17:16:56.687Z",
+    "duration": 27471.128999999997,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -403,3 +403,27 @@
 2026-02-21T17:53:54+01:00 [info]: 🟦 User data: {"Username":"autoTest06","User Role":"ESS","Employee Name":"Timothy Amiano","Status":"Enabled"}
 2026-02-21T17:53:56+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
 2026-02-21T17:53:58+01:00 [info]: ✅ User exists. (user: autoTest06)
+2026-02-21T18:16:58+01:00 [info]: ----------------------------------------
+2026-02-21T18:16:58+01:00 [info]: Test started: admin-functions @regression
+2026-02-21T18:16:58+01:00 [info]: Test retry: 1
+2026-02-21T18:16:58+01:00 [info]: Test project: regression
+2026-02-21T18:16:58+01:00 [info]: ----------------------------------------
+2026-02-21T18:17:04+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-21T18:17:04+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-21T18:17:06+01:00 [info]: 🟦 Login button has been clicked
+2026-02-21T18:17:08+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-21T18:17:09+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T18:17:11+01:00 [info]: 🟦 Add User button clicked
+2026-02-21T18:17:12+01:00 [info]: ✅ Add User Menu has been loaded successfully!
+2026-02-21T18:17:13+01:00 [info]: 🟦 Set user data 'ESS' (userRole)
+2026-02-21T18:17:15+01:00 [info]: 🟦 User 'Timothy' has been set
+2026-02-21T18:17:15+01:00 [info]: 🟦 Set user data 'Timothy' (employeeName)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Enabled' (status)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (password)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Set user data 'Password01' (confirmPassword)
+2026-02-21T18:17:16+01:00 [info]: 🟦 Save button clicked
+2026-02-21T18:17:22+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T18:17:22+01:00 [info]: 🟦 Set user data 'autoTest06' (username)
+2026-02-21T18:17:23+01:00 [info]: 🟦 Set user data 'Enabled' (status)
+2026-02-21T18:17:23+01:00 [info]: 🟦 Clicked 'Search' button

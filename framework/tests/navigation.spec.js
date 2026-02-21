@@ -70,7 +70,7 @@ test.describe('Navigation Tests', () => {
       role: 'ESS',
       employee: 'Timothy',
       status: 'Enabled',
-      username: 'autoTest06',
+      username: 'autoTest01',
       password: 'Password01',
       confirmPassword: 'Password01'
     }
@@ -90,23 +90,23 @@ test.describe('Navigation Tests', () => {
     });
 
     await test.step("Select user", async () => {
-      await app.admin.table.selectByUsername(username);
+      await app.admin.table.selectByUsername(user.username);
     });
 
     await test.step("Read user data", async () => {
-      const userData = await app.admin.table.readDataByUsername(username);
+      const userData = await app.admin.table.readDataByUsername(user.username);
     });
 
     await test.step.skip("Open edit user", async () => {
-      await app.admin.table.openEditByUsername(username);
+      await app.admin.table.openEditByUsername(user.username);
     });
 
     await test.step("Delete user", async () => {
-      await app.admin.table.deleteByUsername(username, { cofirm: false });
+      await app.admin.table.deleteByUsername(user.username, { cofirm: false });
     });
 
     await test.step("Check if user does exist", async () => {
-      await app.admin.table.checkIfUserExists(username, { shouldExist: true });
+      await app.admin.table.checkIfUserExists(user.username, { shouldExist: true });
     });
     
   }); 
