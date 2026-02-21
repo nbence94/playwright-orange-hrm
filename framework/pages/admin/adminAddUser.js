@@ -1,5 +1,4 @@
 import BaseForm from '../../components/baseForm.js';
-import AutoComplete from '../../components/autoComplete.js';
 
 export default class AdminAddUserForm extends BaseForm {
 
@@ -32,15 +31,15 @@ export default class AdminAddUserForm extends BaseForm {
     this.logger.info(`✅ Add User Menu has been loaded successfully!`);
   }
 
-    async clickSaveButton() {
-        await this.actions.click(this.saveButton, { errorMessage: '❌ Save button cannot be found!' });
-        this.logger.info(`🟦 Save button clicked`);
-        await this.page.waitForTimeout(5000);
-    }
+  async clickSaveButton() {
+      await this.actions.click(this.saveButton, { errorMessage: '❌ Save button cannot be found!' });
+      this.logger.info(`🟦 Save button clicked`);
+      await this.page.waitForTimeout(5000);
+  }
 
-    async clickCancelButton() {
-        await this.actions.click(this.cancelButton, { errorMessage: '❌ Cancel button cannot be found!' });
-        this.logger.info(`🟦 Cancel button clicked`);
-    }
+  async clickCancelButton() {
+      await this.actions.click(this.cancelButton, { errorMessage: '❌ Cancel button cannot be found!' });
+      this.logger.info(`🟦 Cancel button clicked`);
+  }
 
 }
