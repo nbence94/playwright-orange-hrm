@@ -66,7 +66,22 @@ test.describe('Navigation Tests', () => {
       await app.admin.table.readAllData();
     });
 
-    let username= 'FMLName1';
+    await test.step("Create User", async() => {
+      await app.admin.clickAddButton();
+      await app.admin.addUser.checkTitle();
+      await app.admin.addUser.fillUserData({
+        role: 'ESS',
+        employee: 'Timothy',
+        status: 'Enabled',
+        username: 'autoTest01',
+        password: '123456',
+        confirmPassword: '123456'
+      });
+      await app.admin.addUser.clickSaveButton();
+      await app.admin.checkTitle();
+    });
+
+    let username= 'autoTest01';
     await test.step("Filter by username", async () => {
       await app.admin.searchPanel.filterByUsername(username);
       await app.admin.searchPanel.filterByStatus('Enabled');

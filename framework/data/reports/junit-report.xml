@@ -1,0 +1,76 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="31.886157">
+<testsuite name="navigation.spec.js" timestamp="2026-02-21T15:24:51.086Z" hostname="regression" tests="1" failures="1" skipped="0" time="30.504" errors="0">
+<testcase name="Navigation Tests › admin-functions @regression" classname="navigation.spec.js" time="30.504">
+<failure message="navigation.spec.js:48:3 admin-functions @regression" type="FAILURE">
+<![CDATA[  [regression] › navigation.spec.js:48:3 › Navigation Tests › admin-functions @regression › Filter by username 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /search/i }) to be visible
+
+
+       at ..\utils\actions.js:13
+
+      11 |
+      12 |     try {
+    > 13 |       await locator.waitFor({ state: 'visible', timeout });
+         |                     ^
+      14 |       await locator.click({ timeout });
+      15 |     } catch (err) {
+      16 |
+        at Actions.click (F:\Developing\_Projects\git\playwright-orange-hrm\framework\utils\actions.js:13:21)
+        at AdminSearchPanel.clickSearchButton (F:\Developing\_Projects\git\playwright-orange-hrm\framework\components\searchPanel.js:24:28)
+        at F:\Developing\_Projects\git\playwright-orange-hrm\framework\tests\navigation.spec.js:87:35
+        at F:\Developing\_Projects\git\playwright-orange-hrm\framework\tests\navigation.spec.js:84:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[2026-02-21T16:24:52+01:00 [info]: ----------------------------------------
+2026-02-21T16:24:52+01:00 [info]: Test started: admin-functions @regression
+2026-02-21T16:24:52+01:00 [info]: Test retry: 1
+2026-02-21T16:24:52+01:00 [info]: Test project: regression
+2026-02-21T16:24:52+01:00 [info]: ----------------------------------------
+2026-02-21T16:24:55+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-21T16:24:55+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-21T16:24:57+01:00 [info]: 🟦 Login button has been clicked
+2026-02-21T16:25:00+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-21T16:25:01+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T16:25:04+01:00 [info]: 🟦 Add User button clicked
+2026-02-21T16:25:04+01:00 [info]: ✅ Add User Menu has been loaded successfully!
+2026-02-21T16:25:06+01:00 [info]: 🟦 Set user data 'ESS' (userRole)
+DEBUG1: Timothy
+DEBUG2: Timothy
+DEBUG3: Timothy
+DEBUG4: Timothy
+DEBUG5: Timothy
+2026-02-21T16:25:08+01:00 [info]: 🟦 Set user data 'Enabled' (status)
+2026-02-21T16:25:08+01:00 [info]: 🟦 Set user data 'autoTest01' (username)
+2026-02-21T16:25:08+01:00 [info]: 🟦 Set user data '123456' (password)
+2026-02-21T16:25:08+01:00 [info]: 🟦 Set user data '123456' (confirmPassword)
+2026-02-21T16:25:08+01:00 [info]: 🟦 Save button clicked
+2026-02-21T16:25:08+01:00 [info]: 🟦 Filtering: 'autoTest01' (username)
+2026-02-21T16:25:09+01:00 [info]: 🟦 Filtering: 'Enabled' (status)
+2026-02-21T16:25:22+01:00 [error]: ❌ Failed to click 'Search' button
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\video.webm]]
+
+[[ATTACHMENT|..\..\..\test-results\navigation-Navigation-Tests-admin-functions-regression-regression\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
