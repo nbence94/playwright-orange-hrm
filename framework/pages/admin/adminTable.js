@@ -49,12 +49,13 @@ export default class AdminTable extends TableItem{
   }
 
   async readAllData() {
+    await this.page.waitForTimeout(1000);
     const rows = this.rows;
     const data = [];
     for (const row of await rows.all()) {
       data.push(await this._getCellsData(row));
     }
-    this.logger.info(`🟦 All user data: ${JSON.stringify(data, null, 2)}`);
+    //this.logger.info(`🟦 All user data: ${JSON.stringify(data, null, 2)}`);
     return data;
   }
 

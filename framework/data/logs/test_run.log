@@ -486,3 +486,101 @@
 2026-02-20T22:32:42+01:00 [info]: 🟦 User data: {"Username":"FMLName1","User Role":"ESS","Employee Name":"FName LName","Status":"Enabled"}
 2026-02-20T22:32:45+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
 2026-02-20T22:32:47+01:00 [info]: ✅ User exists. (user: FMLName1)
+2026-02-21T08:23:51+01:00 [info]: ----------------------------------------
+2026-02-21T08:23:51+01:00 [info]: Test started: admin-functions @regression
+2026-02-21T08:23:51+01:00 [info]: Test retry: 1
+2026-02-21T08:23:51+01:00 [info]: Test project: regression
+2026-02-21T08:23:51+01:00 [info]: ----------------------------------------
+2026-02-21T08:23:57+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-21T08:23:57+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-21T08:23:59+01:00 [info]: 🟦 Login button has been clicked
+2026-02-21T08:24:01+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-21T08:24:02+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T08:24:03+01:00 [info]: 🟦 All user data: [
+  {
+    "Username": "Adam6295",
+    "User Role": "Admin",
+    "Employee Name": "Freddie Boyer",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Adam9451",
+    "User Role": "Admin",
+    "Employee Name": "Freddie Boyer",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Admin",
+    "User Role": "Admin",
+    "Employee Name": "Ashok Reddy",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Alec5436",
+    "User Role": "ESS",
+    "Employee Name": "Alec fox",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Anthony71",
+    "User Role": "ESS",
+    "Employee Name": "Eric Adams",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Antony2587",
+    "User Role": "ESS",
+    "Employee Name": "Antony fox",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Jessica.Block",
+    "User Role": "ESS",
+    "Employee Name": "Rick Wintheiser",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Katrina3960",
+    "User Role": "ESS",
+    "Employee Name": "Katrina fox",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Lucas",
+    "User Role": "Admin",
+    "Employee Name": "Suresh Arumilli",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Mohammad2461",
+    "User Role": "ESS",
+    "Employee Name": "Mohammad fox",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "Poojitha123",
+    "User Role": "ESS",
+    "Employee Name": "Suresh Arumilli",
+    "Status": "Enabled"
+  },
+  {
+    "Username": "test@13432",
+    "User Role": "ESS",
+    "Employee Name": "fdsf dsaf",
+    "Status": "Enabled"
+  }
+]
+2026-02-21T08:32:05+01:00 [info]: ----------------------------------------
+2026-02-21T08:32:05+01:00 [info]: Test started: admin-functions @regression
+2026-02-21T08:32:05+01:00 [info]: Test retry: 1
+2026-02-21T08:32:05+01:00 [info]: Test project: regression
+2026-02-21T08:32:05+01:00 [info]: ----------------------------------------
+2026-02-21T08:32:12+01:00 [info]: 🟦 Username has been set. (value: Admin)
+2026-02-21T08:32:12+01:00 [info]: 🟦 Password has been set. (value: admin123)
+2026-02-21T08:32:12+01:00 [info]: 🟦 Login button has been clicked
+2026-02-21T08:32:16+01:00 [info]: 🟦 'Admin' menu has been selected
+2026-02-21T08:32:17+01:00 [info]: ✅ Admin Menu has been loaded successfully!
+2026-02-21T08:32:21+01:00 [info]: 🟦 User has been selected.
+2026-02-21T08:32:23+01:00 [info]: 🟦 User data: {"Username":"Alec5436","User Role":"ESS","Employee Name":"Alec fox","Status":"Enabled"}
+2026-02-21T08:32:25+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)
+2026-02-21T08:32:27+01:00 [info]: ✅ User exists. (user: Alec5436)

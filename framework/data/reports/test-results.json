@@ -114,53 +114,50 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 20051,
+                      "duration": 21762,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "2026-02-20T22:32:27+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T08:32:05+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:27+01:00 [info]: Test started: admin-functions @regression\r\n"
+                          "text": "2026-02-21T08:32:05+01:00 [info]: Test started: admin-functions @regression\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:27+01:00 [info]: Test retry: 1\r\n"
+                          "text": "2026-02-21T08:32:05+01:00 [info]: Test retry: 1\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:27+01:00 [info]: Test project: regression\r\n"
+                          "text": "2026-02-21T08:32:05+01:00 [info]: Test project: regression\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:27+01:00 [info]: ----------------------------------------\r\n"
+                          "text": "2026-02-21T08:32:05+01:00 [info]: ----------------------------------------\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:33+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
+                          "text": "2026-02-21T08:32:12+01:00 [info]: 🟦 Username has been set. (value: Admin)\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:33+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
+                          "text": "2026-02-21T08:32:12+01:00 [info]: 🟦 Password has been set. (value: admin123)\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:33+01:00 [info]: 🟦 Login button has been clicked\r\n"
+                          "text": "2026-02-21T08:32:12+01:00 [info]: 🟦 Login button has been clicked\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:37+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
+                          "text": "2026-02-21T08:32:16+01:00 [info]: 🟦 'Admin' menu has been selected\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:38+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
+                          "text": "2026-02-21T08:32:17+01:00 [info]: ✅ Admin Menu has been loaded successfully!\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:38+01:00 [info]: 🟦 All user data: []\r\n"
+                          "text": "2026-02-21T08:32:21+01:00 [info]: 🟦 User has been selected.\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:40+01:00 [info]: 🟦 User has been selected.\r\n"
+                          "text": "2026-02-21T08:32:23+01:00 [info]: 🟦 User data: {\"Username\":\"Alec5436\",\"User Role\":\"ESS\",\"Employee Name\":\"Alec fox\",\"Status\":\"Enabled\"}\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:42+01:00 [info]: 🟦 User data: {\"Username\":\"FMLName1\",\"User Role\":\"ESS\",\"Employee Name\":\"FName LName\",\"Status\":\"Enabled\"}\r\n"
+                          "text": "2026-02-21T08:32:25+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
                         },
                         {
-                          "text": "2026-02-20T22:32:45+01:00 [info]: 🟦 User has been selected to delete. (confirmed:false)\r\n"
-                        },
-                        {
-                          "text": "2026-02-20T22:32:47+01:00 [info]: ✅ User exists. (user: FMLName1)\r\n"
+                          "text": "2026-02-21T08:32:27+01:00 [info]: ✅ User exists. (user: Alec5436)\r\n"
                         }
                       ],
                       "stderr": [],
@@ -168,27 +165,27 @@
                       "steps": [
                         {
                           "title": "Attempt to login",
-                          "duration": 972
+                          "duration": 958
                         },
                         {
                           "title": "Navigate in app",
-                          "duration": 4619
+                          "duration": 5010
                         },
                         {
                           "title": "Check Admin Menu",
-                          "duration": 23
+                          "duration": 18
                         },
                         {
                           "title": "Read all user data",
-                          "duration": 10
+                          "duration": 1649
                         },
                         {
                           "title": "Select user",
-                          "duration": 2151
+                          "duration": 2089
                         },
                         {
                           "title": "Read user data",
-                          "duration": 2157
+                          "duration": 2089
                         },
                         {
                           "title": "Open edit user",
@@ -196,14 +193,14 @@
                         },
                         {
                           "title": "Delete user",
-                          "duration": 2169
+                          "duration": 2122
                         },
                         {
                           "title": "Check if user does exist",
-                          "duration": 2079
+                          "duration": 2060
                         }
                       ],
-                      "startTime": "2026-02-20T21:32:27.333Z",
+                      "startTime": "2026-02-21T07:32:05.812Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -223,8 +220,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-20T21:32:26.271Z",
-    "duration": 21281.89,
+    "startTime": "2026-02-21T07:32:04.768Z",
+    "duration": 22954.534,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

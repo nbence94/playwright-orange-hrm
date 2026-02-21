@@ -66,7 +66,7 @@ test.describe('Navigation Tests', () => {
       await app.admin.table.readAllData();
     });
 
-    let username= 'FMLName1';
+    let username= 'Alec5436';
     await test.step("Select user", async () => {
       await app.admin.table.selectByUsername(username);
     });
