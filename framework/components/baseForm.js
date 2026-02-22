@@ -26,7 +26,6 @@ export default class BaseForm extends BasePage {
     }
     
     async getErrorMessage(item) {
-        await this.page.waitForTimeout(1000);
         await this.validations.isVisible(this.errorMessage(item), { errorMessage: "❌ Error message is not visible" });
         const error = await this.actions.readText(this.errorMessage(item), { errorMessage: "❌ Failed to read error message", silent: true });
         return error;
