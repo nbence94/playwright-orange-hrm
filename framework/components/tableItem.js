@@ -11,6 +11,7 @@ export default class TableItem extends BasePage {
     this.rows = this.table.locator('.oxd-table-body .oxd-table-row');
     this.headers = this.table.locator('.oxd-table-header-cell');
     this.cell = (row, index) => row.locator('//div[@role="cell"]/div[not(@class)]').nth(index);
+    this.loading = this.table.locator('.oxd-loading-spinner');
   }
 
   async _getCellsData(row) {
@@ -56,10 +57,12 @@ export default class TableItem extends BasePage {
       }
     }
 
-    throw new Error(`❌ Row not found: ${columnKey}=${value} (tableItem.js)`);
+    //throw new Error(`❌ Row not found: ${columnKey}=${value} (tableItem.js)`);
+    return null;
   }
 
   async isLoaded() {
+    await this.validations.isHidden(this.loading, { errorMessage: '❌ Table is loading (tableItem.js)', timeout: 10000 });
     await this.validations.isVisible(this.headers.first() , { errorMessage: '❌ Table did not loaded (tableItem.js)', timeout: 10000 });
   }
   

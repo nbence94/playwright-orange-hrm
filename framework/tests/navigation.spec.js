@@ -68,11 +68,11 @@ test.describe('Navigation Tests', () => {
 
     let user = {
       role: 'ESS',
-      employee: 'Timothy',
+      employee: 'Murphy',
       status: 'Enabled',
-      username: 'autoTest01',
-      password: 'Password01',
-      confirmPassword: 'Password01'
+      username: `${app.generate.randomText({ length: 8 })}${app.generate.randomNumber({ length: 2 })}`,
+      password: `Password${app.generate.randomNumber({ length: 2 })}`,
+      confirmPassword: `Password${app.generate.randomNumber({ length: 2 })}`
     }
     await test.step("Create User", async() => {
       await app.admin.clickAddButton();
