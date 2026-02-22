@@ -99,6 +99,7 @@ test.describe('Navigation Tests', () => {
 
     await test.step("Open edit user", async () => {
       await app.admin.table.openEditByUsername(user.username);
+      await app.admin.userForm.checkTitle('Edit User');
     });
 
     await test.step("Update user", async () => {

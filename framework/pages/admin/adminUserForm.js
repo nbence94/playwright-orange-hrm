@@ -12,7 +12,7 @@ export default class AdminUserForm extends BaseForm {
       confirmPassword: 'Confirm Password'
     });
 
-    this.title = this.page.locator("//h6[normalize-space()='Add User']");
+    this.title = (title) => this.page.locator(`//h6[normalize-space()='${title}']`);
     this.saveButton = this.page.getByRole('button', { name: /^save$/i });
     this.cancelButton = this.page.getByRole('button', { name: /^cancel$/i });
     this.changePasswordCheckBox= this.page.locator('.oxd-icon.bi-check');
@@ -35,7 +35,7 @@ export default class AdminUserForm extends BaseForm {
   }
 
   async checkTitle(title = 'Add User') {
-    await this.validations.isVisible(this.title, { errorMessage: `❌ ${title} title cannot be found!` });
+    await this.validations.isVisible(this.title(title), { errorMessage: `❌ ${title} title cannot be found!` });
     this.logger.info(`✅ ${title} has been loaded successfully!`);
   }
 
