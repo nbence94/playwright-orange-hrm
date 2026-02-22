@@ -64,6 +64,7 @@ export default class TableItem extends BasePage {
   async isLoaded() {
     await this.validations.isHidden(this.loading, { errorMessage: '❌ Table is loading (tableItem.js)', timeout: 10000 });
     await this.validations.isVisible(this.headers.first() , { errorMessage: '❌ Table did not loaded (tableItem.js)', timeout: 10000 });
+    await this.page.waitForTimeout(3000);
   }
   
 }

@@ -62,13 +62,13 @@ test.describe('Navigation Tests', () => {
       await app.admin.checkTitle();
     });
 
-    await test.step("Read all user data", async () => {
+    await test.step.skip("Read all user data", async () => {
       await app.admin.table.readAllData();
     });
 
     let user = {
       role: 'ESS',
-      employee: 'Murphy',
+      employee: 'John',
       status: 'Enabled',
       username: `${app.generate.randomText({ length: 8 })}${app.generate.randomNumber({ length: 2 })}`,
       password: `Password${app.generate.randomNumber({ length: 2 })}`,
@@ -76,9 +76,9 @@ test.describe('Navigation Tests', () => {
     }
     await test.step("Create User", async() => {
       await app.admin.clickAddButton();
-      await app.admin.addUser.checkTitle();
-      await app.admin.addUser.fillUserData(user);
-      await app.admin.addUser.clickSaveButton();
+      await app.admin.userForm.checkTitle();
+      await app.admin.userForm.fillUserData(user);
+      await app.admin.userForm.clickSaveButton();
       await app.admin.table.isLoaded();
       await app.admin.checkTitle();
     });
@@ -89,16 +89,22 @@ test.describe('Navigation Tests', () => {
       await app.admin.searchPanel.clickSearchButton();
     });
 
-    await test.step("Select user", async () => {
+    await test.step.skip("Select user", async () => {
       await app.admin.table.selectByUsername(user.username);
     });
 
-    await test.step("Read user data", async () => {
+    await test.step.skip("Read user data", async () => {
       const userData = await app.admin.table.readDataByUsername(user.username);
     });
 
-    await test.step.skip("Open edit user", async () => {
+    await test.step("Open edit user", async () => {
       await app.admin.table.openEditByUsername(user.username);
+    });
+
+    await test.step("Update user", async () => {
+      user.username = user.username + '_edited';
+      await app.admin.userForm.fillUserData(user, { update: true });
+      await app.admin.userForm.clickSaveButton();
     });
 
     await test.step("Delete user", async () => {

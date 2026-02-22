@@ -15,20 +15,28 @@ export default class AdminUserForm extends BaseForm {
     this.title = this.page.locator("//h6[normalize-space()='Add User']");
     this.saveButton = this.page.getByRole('button', { name: /^save$/i });
     this.cancelButton = this.page.getByRole('button', { name: /^cancel$/i });
+    this.changePasswordCheckBox= this.page.locator('.oxd-icon.bi-check');
   }
 
-  async fillUserData(data) {
+  async fillUserData(data, { update = false } = {}) {
     await this.select('userRole', data.role);
     await this.autoComplete('employeeName', data.employee);
     await this.select('status', data.status);
     await this.fill('username', data.username);
+
+    if (update) {
+      await this.actions.click(this.changePasswordCheckBox, { 
+        errorMessage: '❌ Change Password checkbox cannot be found!' 
+      });
+    }
+
     await this.fill('password', data.password);
     await this.fill('confirmPassword', data.password);
   }
 
-  async checkTitle() {
-    await this.validations.isVisible(this.title, { errorMessage: '❌ Add User title cannot be found!' });
-    this.logger.info(`✅ Add User Menu has been loaded successfully!`);
+  async checkTitle(title = 'Add User') {
+    await this.validations.isVisible(this.title, { errorMessage: `❌ ${title} title cannot be found!` });
+    this.logger.info(`✅ ${title} has been loaded successfully!`);
   }
 
   async clickSaveButton() {

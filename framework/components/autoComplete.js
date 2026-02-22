@@ -15,6 +15,7 @@ export default class AutoComplete extends BasePage {
   async search(value) {
 
     await this.actions.fill(this.input, value, { errorMessage: '❌ Input field cannot be found! (AutoComplete)' });
+    await this.page.waitForTimeout(1000);
     await this.validations.isVisible(this.panel, { errorMessage: '❌ Dropdown panel is not visible! (AutoComplete)' });
     await this.validations.isVisible(this.panel.getByText(value, { exact: false }).first(), { timeout: 6000, errorMessage: '❌ No user with this name (AutoComplete)' });
     const option = this.panel.getByText(value, { exact: false }).first();
