@@ -10,7 +10,7 @@ export default class AdminPage extends BasePage {
         // objects
         this.table = new AdminTable(page);
         this.searchPanel = new AdminSearchPanel(page);
-        this.addUser = new AdminUserForm(page);
+        this.userForm = new AdminUserForm(page);
 
         // elements
         this.systemUserTitle = this.page.locator("//h5");
