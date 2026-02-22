@@ -6,3 +6,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/framework/data/reports/
+/framework/data/logs/
+/framework/data/screenshots/

@@ -44,8 +44,7 @@ export default class TableItem extends BasePage {
   }
 
   async _findRowBy(columnKey, value) {
-    await this.page.waitForTimeout(2000);
-    await this.table.waitFor({ timeout: 5000 });
+    await this.isLoaded();
     const count = await this.rows.count();
   
     for (let i = 0; i < count; i++) {
@@ -61,7 +60,7 @@ export default class TableItem extends BasePage {
   }
 
   async isLoaded() {
-    await this.validations.isVisible(this.headers.first() , { errorMessage: '❌ Loader is not visible (tableItem.js)', timeout: 10000 });
+    await this.validations.isVisible(this.headers.first() , { errorMessage: '❌ Table did not loaded (tableItem.js)', timeout: 10000 });
   }
   
 }

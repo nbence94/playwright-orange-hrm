@@ -102,11 +102,11 @@ test.describe('Navigation Tests', () => {
     });
 
     await test.step("Delete user", async () => {
-      await app.admin.table.deleteByUsername(user.username, { cofirm: false });
+      await app.admin.table.deleteByUsername(user.username, { cofirm: true });
     });
 
-    await test.step("Check if user does exist", async () => {
-      await app.admin.table.checkIfUserExists(user.username, { shouldExist: true });
+    await test.step("Check if user does not exist", async () => {
+      await app.admin.table.checkIfUserExists(user.username, { shouldExist: false });
     });
     
   }); 
