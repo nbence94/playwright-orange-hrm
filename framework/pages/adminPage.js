@@ -1,7 +1,7 @@
 import BasePage from "./base";
 import AdminTable from "./admin/adminTable.js";
 import AdminSearchPanel from "./admin/adminSearchPanel";
-import AdminAddUserForm from "./admin/adminAddUser.js";
+import AdminUserForm from "./admin/adminUserForm.js";
 
 export default class AdminPage extends BasePage {
     constructor(page) {
@@ -10,7 +10,7 @@ export default class AdminPage extends BasePage {
         // objects
         this.table = new AdminTable(page);
         this.searchPanel = new AdminSearchPanel(page);
-        this.addUser = new AdminAddUserForm(page);
+        this.addUser = new AdminUserForm(page);
 
         // elements
         this.systemUserTitle = this.page.locator("//h5");

@@ -1,6 +1,6 @@
 import BaseForm from '../../components/baseForm.js';
 
-export default class AdminAddUserForm extends BaseForm {
+export default class AdminUserForm extends BaseForm {
 
   constructor(page) {
     super(page, {
