@@ -39,6 +39,16 @@ export default class AdminUserForm extends BaseForm {
     this.logger.info(`✅ ${title} has been loaded successfully!`);
   }
 
+  async checkErrorMessage(item, expectedMessage) {
+    const actualMessage = await this.getErrorMessage(item);
+    const result = await this.validations.equal(actualMessage, expectedMessage, { 
+      errorMessage: `❌ Incorrect '${item}' error message! "${expectedMessage}" != "${actualMessage}"`,
+      soft: true 
+    });
+    if(result) this.logger.info(`✅ Correct '${item}' error message!`);
+    
+  }
+
   async clickSaveButton() {
       await this.actions.click(this.saveButton, { errorMessage: '❌ Save button cannot be found!' });
       this.logger.info(`🟦 Save button clicked`);

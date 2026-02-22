@@ -105,6 +105,6 @@ export default class Validations {
 
     // 3) HARD FAIL
     logger.error(`❌ Fatal error detected: ${message}`);
-    throw new Error(message + (err?.message ? `\n${err.message}` : ''));
+    throw new Error((err?.message ? `\n${err.message}` : ''));
   }
 }

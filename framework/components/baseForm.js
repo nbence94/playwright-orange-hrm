@@ -11,6 +11,7 @@ export default class BaseForm extends BasePage {
         // elements
         this.item = (item) => this.page.locator(`//label[normalize-space()='${this.schema[item]}']/parent::div/parent::div`);
         this.inputItem = (item) => this.item(item).locator(`//input`);
+        this.errorMessage = (item) => this.item(item).locator(`//span[contains(@class, 'oxd-input-field-error-message')]`);
     }
 
     async fill(item, value) {
@@ -22,6 +23,13 @@ export default class BaseForm extends BasePage {
         const dropdown = new Dropdown(this.page, this.item(item).locator(`//div[@class='oxd-select-wrapper']`));
         await dropdown.select(value);
         this.logger.info(`🟦 Set user data '${value}' (${item})`);
+    }
+    
+    async getErrorMessage(item) {
+        await this.page.waitForTimeout(1000);
+        await this.validations.isVisible(this.errorMessage(item), { errorMessage: "❌ Error message is not visible" });
+        const error = await this.actions.readText(this.errorMessage(item), { errorMessage: "❌ Failed to read error message", silent: true });
+        return error;
     }
 
     async autoComplete(item, value) {

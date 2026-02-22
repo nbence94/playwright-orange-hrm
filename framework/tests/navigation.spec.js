@@ -118,9 +118,48 @@ test.describe('Navigation Tests', () => {
     
   }); 
 
+  test('invalid-user-form @regression', async () => {
+
+    await test.step('Attempt to login', async () => {
+      const user = await loginPage.getAdminUser();
+      await loginPage.setUsername(user.username);
+      await loginPage.setPassword(user.password);
+      app = await loginPage.clickLoginButton();
+    });
+    
+    await test.step('Navigate in app', async () => {
+      await app.navigate.clickAdmin();
+    });
+
+    await test.step('Check Admin Menu', async () => {
+      await app.admin.checkTitle();
+    });
+
+    await test.step("Create User", async() => {
+      await app.admin.clickAddButton();
+      await app.admin.userForm.checkTitle();
+      // Nem töltünk ki semmit
+      await app.admin.userForm.clickSaveButton();
+    });
+
+    await test.step("Check Error Messages", async () => {
+      await app.admin.userForm.checkErrorMessage('userRole', 'Required');
+      await app.admin.userForm.checkErrorMessage('employeeName', 'Required');
+      await app.admin.userForm.checkErrorMessage('status', 'Required');
+      await app.admin.userForm.checkErrorMessage('username', 'Required');
+      await app.admin.userForm.checkErrorMessage('password', 'Required');
+      await app.admin.userForm.checkErrorMessage('confirmPassword', 'Passwords do not match');
+    });
+
+    
+  }); 
+
 });
 
 /*
 npx playwright test navigation.spec.js --grep 'navigate-in-app' --headed
 npx playwright test navigation.spec.js --grep 'admin-functions' --headed
+npx playwright test navigation.spec.js --grep 'invalid-user-form' --headed
+
+
 */
